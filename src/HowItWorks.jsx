@@ -5,31 +5,31 @@ const steps = [
     id: "01",
     title: "Technical Consultation",
     desc: "Discuss your requirements and vision with our experienced architects and technical experts to shape a clear project roadmap.",
-    img: "/imagec/timeline-pic-1.webp",
+    img: "/image/timeline-pic-1.webp",
   },
   {
     id: "02",
     title: "Booking",
     desc: "Secure your project by paying a nominal booking amount and officially initiate the construction process.",
-    img: "/imagec/timeline-pic-2.webp",
+    img: "/image/timeline-pic-2.webp",
   },
   {
     id: "03",
     title: "Design & Planning",
     desc: "Our architects prepare detailed designs, layouts, and cost plans tailored to your needs and budget.",
-    img: "/imagec/timeline-pic-3.webp",
+    img: "/image/timeline-pic-3.webp",
   },
   {
     id: "04",
     title: "Construction",
     desc: "Construction begins using quality materials, expert supervision, and regular progress updates at every stage.",
-    img: "/imagec/timeline-pic-4.webp",
+    img: "/image/timeline-pic-4.webp",
   },
   {
     id: "05",
     title: "Handover & Move-In",
     desc: "Final inspection, quality checks, and smooth handover so you can move into your home with confidence and warranty.",
-    img: "/imagec/timeline-pic-6.webp",
+    img: "/image/timeline-pic-6.webp",
   },
 ];
 
