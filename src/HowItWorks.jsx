@@ -5,34 +5,33 @@ const steps = [
     id: "01",
     title: "Technical Consultation",
     desc: "Discuss your requirements and vision with our experienced architects and technical experts to shape a clear project roadmap.",
-    img: "../src/assets/images/timeline-pic-1.webp",
+    img: "/images/timeline-pic-1.webp",
   },
   {
     id: "02",
     title: "Booking",
     desc: "Secure your project by paying a nominal booking amount and officially initiate the construction process.",
-    img: "../src/assets/images/timeline-pic-2.webp",
+    img: "/images/timeline-pic-2.webp",
   },
   {
     id: "03",
     title: "Design & Planning",
     desc: "Our architects prepare detailed designs, layouts, and cost plans tailored to your needs and budget.",
-    img: "../src/assets/images/timeline-pic3.webp",
+    img: "/images/timeline-pic3.webp",
   },
   {
     id: "04",
     title: "Construction",
     desc: "Construction begins using quality materials, expert supervision, and regular progress updates at every stage.",
-    img: "../src/assets/images/timeline-pic4.webp",
+    img: "/images/timeline-pic4.webp",
   },
   {
     id: "05",
     title: "Handover & Move-In",
     desc: "Final inspection, quality checks, and smooth handover so you can move into your home with confidence and warranty.",
-    img: "../src/assets/images/timeline-pic6.webp",
+    img: "/images/timeline-pic6.webp",
   },
 ];
-
 export default function HowItWorks() {
   return (
     <section className="how-it-works">
