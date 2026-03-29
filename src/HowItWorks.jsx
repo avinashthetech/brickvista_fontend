@@ -1,11 +1,11 @@
 import "./HowItWorks.css";
 
 
-import img1 from "../assets/images/timeline-pic-1.webp";
-import img2 from "../assets/images/timeline-pic-2.webp";
-import img3 from "../assets/images/timeline-pic3.webp";
-import img4 from "../assets/images/timeline-pic4.webp";
-import img5 from "../assets/images/timeline-pic6.webp";
+import img1 from "./assets/images/timeline-pic-1.webp";
+import img2 from "./assets/images/timeline-pic-2.webp";
+import img3 from "./assets/images/timeline-pic3.webp";
+import img4 from "./assets/images/timeline-pic4.webp";
+import img5 from "./assets/images/timeline-pic6.webp";
 
 
 const steps = [
