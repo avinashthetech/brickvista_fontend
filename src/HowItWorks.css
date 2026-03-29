@@ -1,0 +1,163 @@
+.how-it-works {
+  background: #f4f8fc; /* light blue background */
+  padding: 90px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b3c5d; /* dark blue */
+}
+
+.section-title span {
+  color: #1f78d1; /* accent blue */
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7c93;
+  margin-bottom: 60px;
+}
+
+/* TIMELINE */
+.timeline {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+/* CENTER LINE */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(31, 120, 209, 0.25); /* blue line */
+  transform: translateX(-50%);
+}
+
+/* ITEM */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* LEFT ITEM */
+.timeline-item.left .content {
+  grid-column: 1;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.timeline-item.left .image {
+  grid-column: 3;
+  padding-left: 30px;
+}
+
+/* RIGHT ITEM */
+.timeline-item:not(.left) .content {
+  grid-column: 3;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.timeline-item:not(.left) .image {
+  grid-column: 1;
+  padding-right: 30px;
+}
+
+/* CONTENT */
+.timeline-item .content {
+  background: #ffffff;
+  padding: 24px 26px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(31, 120, 209, 0.12);
+  border-left: 4px solid #1f78d1; /* blue accent */
+}
+
+.timeline-item.left .content {
+  border-left: none;
+  border-right: 4px solid #1f78d1;
+}
+
+.timeline-item .content h3 {
+  font-size: 22px;
+  color: #1f78d1;
+  margin-bottom: 10px;
+}
+
+.timeline-item .content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5f6f82;
+}
+
+/* IMAGE */
+.timeline-item .image img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* STEP NUMBER (CENTER FIXED) */
+.step-number {
+  grid-column: 2;
+  width: 46px;
+  height: 46px;
+  background: #1f78d1;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(31, 120, 209, 0.4);
+}
+
+@media (max-width: 768px) {
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    display: flex;
+    flex-direction: column;   /* vertical layout */
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  /* STEP NUMBER */
+  .step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* IMAGE TOP */
+  .timeline-item .image {
+    order: 1;                 /* image first */
+    margin-bottom: 20px;
+  }
+
+  /* CONTENT BELOW IMAGE */
+  .timeline-item .content {
+    order: 2;
+    text-align: left !important;
+    border-left: 4px solid #1f78d1 !important;
+    border-right: none !important;
+  }
+}

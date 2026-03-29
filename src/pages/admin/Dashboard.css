@@ -1,0 +1,266 @@
+/* 🌟 Base */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* 🌟 Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* 🌙 Dark Mode */
+.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark .card {
+  background: #1e293b;
+}
+
+.dark table th {
+  background: #334155;
+}
+
+.dark table td {
+  border-bottom: 1px solid #334155;
+}
+
+.dark input {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #475569;
+}
+
+/* 🌟 Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h2 {
+  font-size: 26px;
+  color: #1e293b;
+}
+
+/* Dark title */
+.dark .dashboard-header h2 {
+  color: white;
+}
+
+/* 🔘 Top buttons */
+.dashboard-header button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 🔔 Notification */
+.notify {
+  background: red;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 👤 Profile */
+.profile {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dropdown p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  color: red;
+}
+
+/* Dark dropdown */
+.dark .dropdown {
+  background: #1e293b;
+}
+
+/* 📊 Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #64748b;
+}
+
+.stat-card p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.green {
+  border-left: 6px solid #22c55e;
+}
+
+.orange {
+  border-left: 6px solid #f59e0b;
+}
+
+/* 📦 Card */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  padding: 15px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* 📊 Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #1e293b;
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-size: 13px;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+/* Hover */
+tr:hover {
+  background: #f8fafc;
+}
+
+/* 🌙 Dark table hover */
+.dark tr:hover {
+  background: #334155;
+}
+
+/* Status */
+.done {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.pending {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+/* Done */
+button:first-child {
+  background: #22c55e;
+  color: white;
+}
+
+button:first-child:hover {
+  background: #16a34a;
+}
+
+/* Delete */
+button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+button:last-child:hover {
+  background: #dc2626;
+}
+
+/* 🔍 Search */
+.search-box {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Export button */
+.search-box + button {
+  background: #6366f1;
+  color: white;
+}
+
+/* Loading */
+.dashboard-container p {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

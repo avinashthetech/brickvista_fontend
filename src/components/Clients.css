@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+.clients-area {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #f2f7fc, #ffffff);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b3c5d;
+  margin-bottom: 0;
+}
+
+.section-title h2 span {
+  color: #1f78d1;
+}
+
+/* DIVIDER */
+.divider {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, #1f78d1, #0b5c88);
+  margin: 18px auto 0;
+  position: relative;
+  border-radius: 3px;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-bottom: 3px solid #1f78d1;
+  border-right: 3px solid #1f78d1;
+  transform: rotate(45deg);
+  left: 50%;
+  top: 9px;
+  margin-left: -7px;
+  background: #fff;
+}
+
+/* INTRO TEXT */
+.clients-intro {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5f6f81;
+}
+
+/* GRID */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+/* LOGO BOX */
+.client-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 18px;
+  text-align: center;
+  border: 1px solid #e3edf8;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 20px rgba(31, 120, 209, 0.08);
+}
+
+.client-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(31, 120, 209, 0.20);
+  border-color: #1f78d1;
+}
+
+/* LOGO */
+.client-box img {
+  max-width: 100%;
+  height: 55px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.9);
+  transition: 0.35s ease;
+}
+
+.client-box:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .clients-area {
+    padding: 80px 18px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients-area {
+    padding: 70px 15px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .clients-intro {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .client-box {
+    padding: 18px 12px;
+    border-radius: 12px;
+  }
+
+  .client-box img {
+    height: 42px;
+  }
+}
