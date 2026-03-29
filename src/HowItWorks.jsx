@@ -17,27 +17,29 @@ const steps = [
     id: "03",
     title: "Design & Planning",
     desc: "Our architects prepare detailed designs, layouts, and cost plans tailored to your needs and budget.",
-    img: "/images/timeline-pic3.webp",
+    img: "/images/timeline-pic-3.webp",
   },
   {
     id: "04",
     title: "Construction",
     desc: "Construction begins using quality materials, expert supervision, and regular progress updates at every stage.",
-    img: "/images/timeline-pic4.webp",
+    img: "/images/timeline-pic-4.webp",
   },
   {
     id: "05",
     title: "Handover & Move-In",
     desc: "Final inspection, quality checks, and smooth handover so you can move into your home with confidence and warranty.",
-    img: "/images/timeline-pic6.webp",
+    img: "/images/timeline-pic-6.webp",
   },
 ];
+
 export default function HowItWorks() {
   return (
     <section className="how-it-works">
       <h2 className="section-title">
         HOW IT <span>WORKS</span>
       </h2>
+
       <p className="section-subtitle">
         Book · Track · Monitor · Settle
       </p>
@@ -53,7 +55,7 @@ export default function HowItWorks() {
             <div className="content">
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
-              <a href="#">read more</a>
+              <a href="#">Read More</a>
             </div>
 
             <div className="image">
